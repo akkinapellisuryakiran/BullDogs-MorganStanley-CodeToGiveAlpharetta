@@ -47,45 +47,7 @@
 
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
-<script type="module">
-
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
-  import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyCXQJXQLUF9qhOH_0QsLhUllOB0lPJ2t2Q",
-    authDomain: "bulldogs-codetogive.firebaseapp.com",
-    projectId: "bulldogs-codetogive",
-    storageBucket: "bulldogs-codetogive.appspot.com",
-    messagingSenderId: "787939459505",
-    appId: "1:787939459505:web:f8629ce1a3484e8cd7fd90",
-    measurementId: "G-PKY0CJSECL"
-    //databaseURL: "https://bulldogs-codetogive-default-rtdb.firebaseio.com/",
-
-  };
-
-  // Initialize Firebase
-
-  const app = firebase.initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  console.log(db);
-
-  const users_ref = collection(db, "Users");
-  const user_interests_ref = collection(db, "UserInterests");
-  const user_roles_ref = collection(db, "UserRoles");
-  const visits_ref = collection(db, "Visits");
-
-  db.collection("Users")
-      .get()
-      .then(collectionData => {
-        // you will get student data collection in collectionData object
-        console.log('data collection : ', collectionData);
-      }).catch(err => {
-        // Error or Exception occure
-        console.log('error', err.response);
-      });
+<script type="module" src="./js/firebase_config.js">
 
 </script>
 
