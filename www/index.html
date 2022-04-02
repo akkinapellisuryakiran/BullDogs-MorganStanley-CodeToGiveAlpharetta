@@ -2,21 +2,41 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+	<link href="css/signin.css" rel="stylesheet">
+<title>Tech Alpharetta Mentroship Program Login</title>
 </head>
 
+	
+<div id="logo"> <img src="images/mentorprog.jpg">  </div>
 <body>
-	<div class="conatiner">
-	<label for="user">Username</label>
-		<input type="text" placeholder="Enter Username" name="user" required>
-		<br>
-	<labe for="passwd">Password</labe>
-		<input type="password" placeholder="Enter Password" name="passwd" required>
-		
-	</div>
-	<div class="login"><button type="submit" id="loginButton">Login</button></div>
+	
+<div id="login-box">
+  <div class="left">
+    <h1>Sign in</h1>
+    
+    <input type="text" name="email" placeholder="E-mail" />
+    <input type="password" name="password" placeholder="Password" />
+    
+    <input type="submit" name="signin_submit" value="Sign in" onClick="" />
+	<button id="createAccount" onClick="location.href = 'createaccount.html'" >Sign Up</button>
+  </div>
+  
+  <div class="right">
+    <span class="loginwith">Sign in with<br />social network</span>
+    
+    <button class="social-signin facebook">Log in with Facebook</button>
+    <button class="social-signin twitter">Log in with Twitter</button>
+    <button class="social-signin google">Log in with Google</button>
+	<button class="social-signin linkedin">Log in with LinkedIn</button>
+  </div>
+  <div class="or">OR</div>
+</div>
+	
+	
+
+
 	<div class="signup">
-		<button id="createAccount" onClick="location.href = 'createaccount.html'" >No account? Create one now!</button>
+		
 		
 	</div>
 	<div>
