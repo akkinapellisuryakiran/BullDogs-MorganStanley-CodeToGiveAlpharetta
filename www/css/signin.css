@@ -94,11 +94,11 @@ input[type="submit"] {
 }
 
 #forgotpasswd {
-  margin-top: -6px;
-  margin-left: 45px;
-  width: 77px;
+  margin-top: 24px;
+  margin-left: 59px;
+  width: 92px;
   height: 32px;
-  background: #7e1717;
+  background: #171f7e;
   border: none;
   border-radius: 2px;
   color: #FFF;
@@ -111,6 +111,8 @@ input[type="submit"] {
 }
 
 #logo{
+	width: 50%;
+	height: 50%;
 	position: relative;
 	top: 85%;
 	left: 5%;
