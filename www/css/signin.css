@@ -117,6 +117,7 @@ input[type="submit"] {
 	top: 85%;
 	left: 5%;
 }
+#forgotpasswd:hover, #forgotpasswd:focus,
 #createAccount:hover, #forgotpasswd:hover,
 #createAccount:focus, #forgotpasswd:focus,
 input[type="submit"]:hover,
