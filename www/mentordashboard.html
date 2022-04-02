@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mentor Dash</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <a class="navbar-brand">Hello, Mentor</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"></a> </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Tasks </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Schedule a meeting with mentee</a> <a class="dropdown-item" href="#">Search for mentees near me</a><a class="dropdown-item" href="#">Chat with a mentee</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Change Profile Settings</a> 
+            </div>
+          </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Logout</a> </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+</form>
+      </div>
+</nav>
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-center">Your weekly outlook</h1>
+              	<ol>
+					<li><b>Monday 8:45am</b> - Zoom meeting with Maria</li>
+					<li><b>Wednesday 11:30am</b> - Lunch with  My</li>
+					<li><b>Friday 5:15pm</b> - Weekly checkin with Rosalind</li>
+				</ol>
+				<p class="text-center"></p>
+              <p>&nbsp;</p>
+              <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Schedule new event</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-4 mt-2 text-center">
+            <h2>Your mentees</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <a href="#"><img class="rounded-circle" alt="140x140" href="#" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true"></a>
+            <h3>Maria D.</h3><h5>Cumming, GA</h5>
+			  <ul>
+				  <li>Interested in MariaDB administration</li>
+				  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <a href="#"><img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true"></a>
+            <h3>My S.</h3><h5>John's Creek, GA</h5>
+            <ul>
+				  <li>Interested in MySQL administration</li>
+				  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+            <a href="#"><img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true"></a>
+            <h3>Rosalind F.</h3><h5>Duluth, GA</h5>
+            <ul>
+				  <li>Interested in Biomechanical engineering</li>
+				  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+           <a href="#"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true"></a>
+            <span class="alert-danger"><h3>Alexa A.</h3></span><h5>Woodstock, GA</h5>
+            <ul>
+				  <li>Interested in Full-Stack Development</li>
+				  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+           <a href="#"> <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true"></a>
+           <span class="alert-danger"> <h3>Liz T.</h3></span><h5>Marietta, GA</h5>
+            <ul>
+				  <li>Interested in Mobile Application Development</li>
+				  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center">
+          <a href="#">  <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true"></a>
+			  <span class="alert-danger"><h3>Michelle G.</h3></span><h5>Alpharetta, GA</h5>
+            <ul>
+				  <li>Interested in Reverse Engineering</li>
+				  </ul>
+          </div>
+        </div>
+       
+    <footer class="text-center">A <span class="alert-danger">red</span> name indicates no meetings with that mentee. <a href="#">Schedule one with them now.</a></footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
