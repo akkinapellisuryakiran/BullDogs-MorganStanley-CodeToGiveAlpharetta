@@ -1,11 +1,147 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
+	<link href="css/questions_style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        New User Information
+    </title>
 	
+	<body>
+		
+    <h1>Tech Alpharetta Mentor/Mentee Account Information</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        
+		<div class="form-control">
+            <label for="role" id="label-role">
+                Are you signing up as a potential mentor or are you looking for a mentor?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="mentorsel" id="mentorsel">
+                <option value="mentee">Looking for a mentor</option>
+                <option value="mentor">Looking to mentor someone</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+		
+  		<div class="form-control">
+            <label for="school" id="label-school">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="school"
+                   placeholder="Enter your School or Job Title" />
+        </div>
+		
+        <div class="form-control">
+            <label>
+                Do you prefer a virtual, in-person, or hybrid mentorship?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">In-person</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">Virtual</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Hybrid</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Science</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Technology</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Engineering</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Arts</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Math</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label for="additonalskills">
+                If known, please specify your area of interest in the above selected fields.
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your skills and or intersts here">
+            </textarea>
+        </div>
+
+		<div class="form-control">
+            <label for="goals">
+                What are your goals from this mentorship-mentee program?
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="goals" id="goals"
+                placeholder="Enter your goals here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit" onClick="location.href = #">
+            Submit
+        </button>
+    </form>
 </body>
+  
 </html>

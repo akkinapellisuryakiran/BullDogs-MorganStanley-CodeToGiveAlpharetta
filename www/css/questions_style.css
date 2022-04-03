@@ -1,0 +1,76 @@
+ /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            font-family: Verdana;
+            text-align: center;
+			background-color: #ddd;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+           margin-top: -6px;
+  		   margin-left: 0px;
+  		   width: 500px;
+  		   height: 32px;
+  		   background: #16a085;
+  		   border: none;
+  		   border-radius: 2px;
+  		   color: #FFF;
+  		   font-family: 'Roboto', sans-serif;
+  		   font-weight: 500;
+  		   text-transform: uppercase;
+  		   transition: 0.1s ease;
+  		   cursor: pointer;
+  		         }
+
+button:hover,
+button:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+input[type="submit"] {
+  
+}

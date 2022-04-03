@@ -14,3 +14,14 @@
 - For the questions, since this platform is being targeted towards 9^th^ and 10^th^ graders, they may not know what they want in the STEAM(Science, tech, engineering, arts, and math) fields. So we should offer them the choice between a questionaire or through an interactive lifesyles activity. The questionaire should dynamically pull questions based on how the previous question was answered. 
     - The interactive lifestyles activity should be similar to a choose your own path adventure, where the mentee signing up would role play as their character and respond to various activites that are determined through a brief introductory phase at the begining.
 
+Badges and point system (add overview to top right of nav bar)
+
+Level of Knowledge (can add points based on difficulty of test and number correct)
+
+Skill circle chart for mentor
+
+Badges for mentees
+
+Groups
+
+trailblazer.me (similar to this)
