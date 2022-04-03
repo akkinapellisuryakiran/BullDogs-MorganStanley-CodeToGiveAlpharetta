@@ -34,14 +34,15 @@
   
         <div class="form-control">
             <label for="age" id="label-age">
-                Age
+                What is your birthday?
             </label>
  
             <!-- Input Type Text -->
-            <input type="text"
+            <input type="date"
                    id="age"
-                   placeholder="Enter your age" />
+               
         </div>
+			<br>
   
         <div class="form-control">
             <label for="role" id="label-role">
@@ -93,9 +94,25 @@
             </label>
         </div>
   
+	<div class="form-control">
+            <label>What is your availability?
+				<small>(Select all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Mornings</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Evenings</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Weekends</input></label>
+        </div>
+	
         <div class="form-control">
             <label>Languages and Frameworks known
-                <small>(Check all that apply)</small>
+                <small>(Select all that apply)</small>
             </label>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
