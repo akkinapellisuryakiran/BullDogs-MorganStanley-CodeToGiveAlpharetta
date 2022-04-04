@@ -1,14 +1,22 @@
 <head><link href="css/createaccount.css" rel="stylesheet">
 <title>Account Creation</title>
 	</head>
+<body>
+<script>
+    if (window.google_auth) {
+        document.getElementById('first_name').innerText(window.name['first_name']);
+        document.getElementById('last_name').innerText(window.name['last_name']);
+        document.getElementById('email').innerText(window.name['email']);
+    }
+</script>
 <div id="login-box">
   <div class="left">
     <h1>Sign up</h1>
     
-	<input type="text" name="fname" placeholder="First Name" />
-	<input type="text" name="lname" placeholder="Last Name" />
-	<input type= "text" placeholder="Zip Code" />
-    <input type="text" name="email" placeholder="E-mail" />
+	<input id="first_name" type="text" name="fname" placeholder="First Name" />
+	<input id="last_name" type="text" name="lname" placeholder="Last Name" />
+	<input id="zip_code" type= "text" placeholder="Zip Code" />
+    <input id="email" type="text" name="email" placeholder="E-mail" />
     <input type="password" name="password" placeholder="Password" />
     <input type="password" name="password2" placeholder="Retype password" />
     
@@ -25,3 +33,4 @@
   </div>
   <div class="or">OR</div>
 </div>
+</body>
