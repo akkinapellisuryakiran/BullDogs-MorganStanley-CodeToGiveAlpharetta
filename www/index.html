@@ -9,7 +9,19 @@
 	
 <div id="logo"> <img src="images/mentorprog.jpg">  </div>
 <body>
-	
+
+<script>
+    window.google_auth = false;
+    function authenticateWithGoogle(){
+        firebase.auth().signInWithPopup(GoogleAuth).then(data=>{
+            console.log(data);
+            window.google_auth = true;
+            window.name = data['additionalUserInfo']['profile'];
+            window.location.href = './createaccount.html';
+        });
+       }
+</script>
+
 <div id="login-box">
   <div class="left">
     <h1>Sign in</h1>
@@ -27,14 +39,11 @@
     
     <button class="social-signin facebook">Log in with Facebook</button>
     <button class="social-signin twitter">Log in with Twitter</button>
-    <button class="social-signin google">Log in with Google</button>
+    <button class="social-signin google" onclick="authenticateWithGoogle()">Log in with Google</button>
 	<button class="social-signin linkedin">Log in with LinkedIn</button>
   </div>
   <div class="or">OR</div>
 </div>
-	
-	
-
 
 	<div class="signup">
 		
@@ -48,9 +57,10 @@
 
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
-<script type="module" src="./js/firebase_config.js">
 
-</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+<script type="module" src="./js/firebase_config.js"></script>
 
 </body>
 </html>
